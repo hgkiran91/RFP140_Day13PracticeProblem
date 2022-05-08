@@ -5,13 +5,15 @@ package com.bridgelabz.generics;
 // returns -1 if the argument integer is greater than the integer value
 // returns 1 if the argument integer is lesser than the integer value
 
+import javax.print.DocFlavor;
+
 public class MaxOfNumbers<T> {
 
     public static void main(String args[]) {
-        Float obj1 = new Float(737.23F);
-        Float obj2 = new Float(90.2F);
-        Float obj3 = new Float(111.3F);
-        Float max = obj1;
+        String obj1="Apple";
+        String obj2="Peach";
+        String obj3="Banana";
+        String max=obj1;
 
         if (obj2.compareTo(max) > 0) {
             max = obj2;
@@ -19,6 +21,6 @@ public class MaxOfNumbers<T> {
         if (obj3.compareTo(max) > 0) {
             max = obj3;
         }
-        System.out.println("Max of three Floating number is: " + max);
+        System.out.println("Max of three Strings is: " + max);
     }
 }
