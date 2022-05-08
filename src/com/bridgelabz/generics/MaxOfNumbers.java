@@ -8,16 +8,17 @@ package com.bridgelabz.generics;
 public class MaxOfNumbers<T> {
 
     public static void main(String args[]) {
-        Integer obj1 = new Integer(76879);
-        Integer obj2 = new Integer(879779);
-        Integer obj3 = new Integer(21234);
-        Integer max = obj1;
+        Float obj1 = new Float(737.23F);
+        Float obj2 = new Float(90.2F);
+        Float obj3 = new Float(111.3F);
+        Float max = obj1;
 
         if (obj2.compareTo(max) > 0) {
             max = obj2;
-        } else if (obj3.compareTo(max) > 0) {
+        }
+        if (obj3.compareTo(max) > 0) {
             max = obj3;
         }
-        System.out.println("Max of three number is: " + max);
+        System.out.println("Max of three Floating number is: " + max);
     }
 }
